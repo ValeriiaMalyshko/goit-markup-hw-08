@@ -1,0 +1,251 @@
+footer {
+    padding: 60px 0;
+    background-color: var(--footer-backgroud-color);
+}
+
+.info-contacs .lower {
+    display: block;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+      }
+    @media screen and (min-width: 768px) {
+        text-align: center;
+      }
+    
+}
+address {
+    font-style: normal;
+  }
+.info {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.info-contacs {
+    @media screen and (min-width: 768px) {
+        margin-left: 61px;
+        margin-bottom: 60px;
+      }
+
+}
+
+.contacts {
+    font-family: inherit ;
+    font-size: 14px;
+    line-height: 1.71;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+    @media screen and (min-width: 768px) {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+    
+}
+.contacts-item {
+    color: var(--primary-background-color);
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+      }
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+      }
+   
+}
+
+.contacts .link {
+    display: block;
+    color: var(--primary-background-color) 60%;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+        color:var(--accent-color);
+    }
+}
+    
+.contact-tel {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 8px;
+      }
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+      }
+}
+
+.join {
+    
+    @media screen and (max-width: 767px) {
+        display: block;
+        text-align: center;
+      }
+      
+    @media screen and (min-width: 768px) {
+        display: block;
+        text-align: center;
+        margin-left: 165px;
+      }
+    @media screen and (min-width: 1200px) {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+      }
+}
+.join-title {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color:var(--primary-background-color);
+    margin-bottom: 20px;
+}
+.join-social {
+    display: flex;
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        margin-bottom: 60px;
+      }
+      @media screen and (min-width: 768px) {
+        justify-content: center;
+      }
+
+}
+.join-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.join-icon {
+    width: 20px;
+    height: 20px;
+    fill:var(--primary-background-color);
+}
+.join-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.subscription-form {
+    
+    @media screen and (max-width: 767px) {
+       display: block;
+       text-align: center;
+      }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
+      }
+    
+}
+.subscription-form-head {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-background-color);
+    margin-bottom: 20px;
+}
+.subscription-form-input {
+    height: 50px;
+    padding: 15px 16px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--footer-backgroud-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+        width: 450px;
+        margin-bottom: 20px;
+      }
+    
+    @media screen and (min-width: 768px) {
+        width: 450px;
+        margin-bottom: 20px;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
+      }
+
+    &:hover {
+        border: 1px solid var(--accent-color);
+    }
+}
+
+.subscription-form-button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--primary-background-color);
+    background-color: var(--accent-color);
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+.send-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-background-color);
+    vertical-align: middle;
+}
