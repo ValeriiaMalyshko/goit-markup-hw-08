@@ -1683,7 +1683,7 @@ address {
 
 @media screen and (max-width: 767px) {
   .subscription-form-input {
-    width: 450px;
+    width: calc(100% - 30px);
     margin-bottom: 20px;
   }
 }
