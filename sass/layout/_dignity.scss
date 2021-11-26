@@ -11,23 +11,34 @@
       }
 }
 .digity__list {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+@media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .dignity__item {
     @media screen and (max-width: 767px) {
-        width: 450px;
+        width: calc(100%-30px);
         margin-bottom: 30px;
       }
     
     @media screen and (min-width: 768px) {
-        width: 354px;
+        width: calc(100%/2 - 30px);
         margin-bottom: 30px;
         margin-right: 30px;
       }
     
     @media screen and (min-width: 1200px) {
-        width: 270px;
+        width: calc(100%/4 - 30px);
         margin-right: 30px;
       }
 

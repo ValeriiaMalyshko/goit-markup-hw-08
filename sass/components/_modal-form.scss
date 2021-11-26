@@ -5,10 +5,21 @@
 .modal-form-head {
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.15;
     text-align: center;
     color:var(--title-text-color);
     margin-bottom: 12px;
+
+    @media screen and (max-width: 767px) {
+        line-height: 1.5;
+      }
+    
+    @media screen and (min-width: 768px) {
+        line-height: 1.5;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+      }
 }
 .modal-form-field {
     font-size: 12px;
@@ -77,13 +88,25 @@
 
 .modal-form-checkbox-label{
     display: flex;
-    text-align: center;
-    justify-content: center;
     font-family: inherit;
-    font-size: 14px;
-    line-height: 1.7;
     color: var(--primary-text-color);
     margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+        font-size: 11px;
+        line-height: 1.17;
+      }
+    
+    @media screen and (min-width: 768px) {
+        font-size: 11px;
+        line-height: 1.17;
+      }
+    
+    @media screen and (min-width: 1200px) {
+        text-align: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 1.7;
+      }
 
     &::before {
         display: block;
@@ -104,6 +127,7 @@
     background-color: var(--accent-color);
     background-image: url(../images/check.svg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .modal-form-checkbox:focus + 
 .modal-form-checkbox-label::before {

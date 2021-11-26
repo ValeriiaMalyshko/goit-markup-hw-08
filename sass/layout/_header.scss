@@ -118,19 +118,16 @@
         display: block;
         margin-right: 0;
         margin-left: auto;
-        padding-top: 21px;
-        padding-bottom: 21px;
       }
     
       @media screen and (min-width: 1200px) {
         display: flex;
         margin-right: 0;
         margin-left: auto;
-        padding: 0;
       
       }
 }
-.auth-nav .item + .item {
+.auth-nav .mail + .phone {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 10px;
   }
@@ -157,6 +154,16 @@
       font-size: 14px;
       line-height: 1.14;
     }
+}
+.auth-nav .mail .link  {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 21px;
+  }
+}
+.auth-nav .phone .link {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 21px;
+  }
 }
 .mail-icon {
     width: 16px;
@@ -199,8 +206,11 @@
     z-index: 100;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     width: 100vw;
-    height: 100vh;
     padding: 48px 40px;
     background-color:var(--primary-background-color);
     opacity: 0;
@@ -233,6 +243,9 @@
     height: 40px;
   }
 .mobile-menu-nav .link {
+  @media screen and (max-width: 479px) {
+    font-size: 8vw;
+  }
     font-family: inherit;
     font-weight: 500;
     font-size: 40px;
@@ -252,9 +265,12 @@
 }
 .mobile-menu-auth-nav {
   display: block;
-  margin-top: 302px;
+  margin-top: auto;
 }
 .mobile-menu-auth-nav .phone .link {
+  @media screen and (max-width: 479px) {
+    font-size: 7vw;
+  }
     display: block;
     font-family: inherit;
     font-weight: 500;
@@ -262,15 +278,19 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
 }
 .mobile-menu-auth-nav .mail .link {
+  @media screen and (max-width: 479px) {
+    font-size: 5vw;
+  }
     display: block;
     font-family: inherit;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
 }
 .mobile-menu-auth-nav .item + .item {
     margin-top: 32px;
@@ -289,6 +309,9 @@
     margin: 0 10px;
 }
 .mobile-menu-contacts .link {
+  @media screen and (max-width: 479px) {
+    font-size: 3vw;
+  }
     display: block;
     font-family: inherit;
     font-weight: 500;
@@ -296,4 +319,5 @@
     line-height: 22px;
     letter-spacing: 0.02em;
     color:var(--accent-color);
+    
   }
