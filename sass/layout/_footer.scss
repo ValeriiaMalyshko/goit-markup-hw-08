@@ -2,6 +2,23 @@ footer {
     padding: 60px 0;
     background-color: var(--footer-backgroud-color);
 }
+.info-join {
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 60px auto;
+}
+   @media screen and (min-width: 1200px) {
+    margin: 0;
+}
+  }
+
+
 .info-contacs {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
@@ -34,7 +51,7 @@ address {
 }
 .info-contacs {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: 61px;
+        margin-right: 165px;
       }
 
 }
@@ -50,7 +67,6 @@ address {
       }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         text-align: center;
-        margin-bottom: 60px;
       }
     
 }
@@ -100,13 +116,11 @@ address {
     @media screen and (max-width: 767px) {
         display: block;
         text-align: center;
-        margin-bottom: 60px;
       }
       
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: block;
         text-align: center;
-        margin-left: 165px
       }
     @media screen and (min-width: 1200px) {
         display: block;
@@ -178,7 +192,6 @@ address {
         text-align: center;
         margin-right: auto;
         margin-left: auto;
-        margin-top: 60px;
       }
     
     @media screen and (min-width: 1200px) {

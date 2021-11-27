@@ -90,8 +90,15 @@
     display: flex;
     font-family: inherit;
     color: var(--primary-text-color);
+    margin-right: 0;
     margin-bottom: 30px;
-    @media screen and (max-width: 767px) {
+
+    @media screen and (max-width: 479px) {
+        font-size: 8px;
+        line-height: 1.17;
+      }
+
+    @media screen and (min-width: 480px) {
         font-size: 11px;
         line-height: 1.17;
       }
@@ -151,5 +158,6 @@
     margin: 0 auto;
 }
 .modal-form-terms {
+    display: block;
     color: var(--accent-color);
 }

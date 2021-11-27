@@ -252,14 +252,18 @@
     line-height: 1.88;
     color: var(--title-text-color);
 }
+.mobile-menu .mobile-menu-nav-current {
+  color: var(--accent-color);
+}
+
 .mobile-menu-nav .link:hover,
 .mobile-menu-nav .link:focus {
     color: var(--accent-color);
 }
-.mobile-menu-nav .item {
-  display: block;
-  height: 48px;
-}
+// .mobile-menu-nav .item {
+//   display: block;
+//   height: 48px;
+// }
 .mobile-menu-nav .item +.item {
     margin-top: 32px;
 }

@@ -127,7 +127,15 @@ img {
   padding: 40px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+    height: 609px;
+    padding: 40px 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -243,10 +251,18 @@ img {
   display: flex;
   font-family: inherit;
   color: var(--primary-text-color);
+  margin-right: 0;
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .modal-form-checkbox-label {
+    font-size: 8px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .modal-form-checkbox-label {
     font-size: 11px;
     line-height: 1.17;
@@ -314,6 +330,7 @@ img {
 }
 
 .modal-form-terms {
+  display: block;
   color: var(--accent-color);
 }
 
@@ -616,14 +633,13 @@ img {
   }
 }
 
-.mobile-menu-nav .link:hover,
-.mobile-menu-nav .link:focus {
+.mobile-menu .mobile-menu-nav-current {
   color: var(--accent-color);
 }
 
-.mobile-menu-nav .item {
-  display: block;
-  height: 48px;
+.mobile-menu-nav .link:hover,
+.mobile-menu-nav .link:focus {
+  color: var(--accent-color);
 }
 
 .mobile-menu-nav .item + .item {
@@ -725,20 +741,35 @@ img {
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet.jpg");
-    max-width: 768px;
+    max-width: 767px;
+    height: 400px;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet@2x.jpg");
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg");
+    max-width: 1199px;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -748,7 +779,7 @@ img {
   }
 }
 
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop@2x.jpg");
   }
@@ -814,12 +845,6 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .digity__list {
-    display: block;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .digity__list {
     display: flex;
@@ -843,7 +868,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .dignity__item {
-    width: calc(100%/2 - 30px);
+    width: calc((100% - 30px) / 2);
     margin-bottom: 30px;
     margin-right: 30px;
   }
@@ -851,7 +876,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .dignity__item {
-    width: calc(100%/4 - 30px);
+    width: calc((100%  - 3*30px) / 4);
+    margin-bottom: 0;
     margin-right: 30px;
   }
 }
@@ -1008,12 +1034,6 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .command__list {
-    display: block;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .command__list {
     display: flex;
@@ -1038,7 +1058,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .command__item {
-    width: calc(100%/2 - 30px);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
     text-align: center;
@@ -1047,7 +1067,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .command__item {
-    width: calc(100%/4 - 30px);
+    width: calc((100%  - 3*30px) / 4);
+    margin-bottom: 0;
     margin-right: 30px;
     text-align: center;
   }
@@ -1262,6 +1283,7 @@ img {
   .client__item {
     width: calc((100%  - 5*30px) / 6);
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -1579,6 +1601,26 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .info-join {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info-join {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 60px auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-join {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .info-contacs {
     margin-bottom: 60px;
   }
@@ -1621,7 +1663,7 @@ address {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .info-contacs {
-    margin-left: 61px;
+    margin-right: 165px;
   }
 }
 
@@ -1640,7 +1682,6 @@ address {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1698,7 +1739,6 @@ address {
   .join {
     display: block;
     text-align: center;
-    margin-bottom: 60px;
   }
 }
 
@@ -1706,7 +1746,6 @@ address {
   .join {
     display: block;
     text-align: center;
-    margin-left: 165px;
   }
 }
 
@@ -1790,7 +1829,6 @@ address {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 60px;
   }
 }
 

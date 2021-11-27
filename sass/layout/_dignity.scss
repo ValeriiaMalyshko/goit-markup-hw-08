@@ -11,9 +11,9 @@
       }
 }
 .digity__list {
-  @media screen and (max-width: 767px) {
-    display: block;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: block;
+  // }
 
 @media screen and (min-width: 768px) {
     display: flex;
@@ -32,13 +32,14 @@
       }
     
     @media screen and (min-width: 768px) {
-        width: calc(100%/2 - 30px);
+        width: calc((100% - 30px) / 2);
         margin-bottom: 30px;
         margin-right: 30px;
       }
     
     @media screen and (min-width: 1200px) {
-        width: calc(100%/4 - 30px);
+        width: calc((100%  - 3*30px) / 4);
+        margin-bottom: 0;
         margin-right: 30px;
       }
 
